@@ -9,6 +9,6 @@ fan.props
 etc/
 
 # lib/
-/lib/
+/lib/fan/
 
 
