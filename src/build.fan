@@ -6,6 +6,7 @@
 //   3 Aug 23  Brian Frank  Creation
 
 using build
+using fanr
 
 **
 ** Build script for directory
@@ -24,5 +25,19 @@ class Build : BuildGroup
       `webfwt/build.fan`,
     ]
   }
+
+  @Target { help="Publish to EggBox" }
+  Void publish()
+  {
+    pods := ["icons", "gfx", "fwt", "flux", "fluxText", "webfwt"]
+    user := Env.cur.prompt("Eggbox user> ")
+    pass := Env.cur.prompt("Eggbox pass> ")
+
+    pods.each |pod|
+    {
+      Main().main(["publish", "-u", user, "-p", pass, pod])
+    }
+  }
+
 }
 

@@ -24,7 +24,7 @@ class Build : BuildPod
                "proj.uri":     "https://fantom.org/",
                "license.name": "Academic Free License 3.0",
                "vcs.name":     "Git",
-               "vcs.uri":      "https://github.com/fantom-lang/fantom"]
+               "vcs.uri":      "https://github.com/fantom-lang/fwt"]
     depends = ["sys 1.0"]
     resDirs = [`x16/`, `x32/`, `x48/`, `x64/`, `x256/`]
     docApi  = false

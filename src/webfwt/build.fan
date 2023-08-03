@@ -25,7 +25,7 @@ class Build : BuildPod
                "proj.name":    "Fantom Core",
                "license.name": "Academic Free License 3.0",
                "vcs.name":     "Git",
-               "vcs.uri":      "https://github.com/fantom-lang/fantom"]
+               "vcs.uri":      "https://github.com/fantom-lang/fwt"]
     depends = ["sys 1.0", "gfx 1.0", "fwt 1.0", "web 1.0"]
     srcDirs = [`fan/`,
                //`fan/internal/`,
