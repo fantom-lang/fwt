@@ -24,7 +24,7 @@ navigation history just like a browser.
 Unlike a normal browser, we leverage Fantom's built-in [naming](https://fantom.org/doc/docLang/Naming)
 framework.  This means we can use Flux to browser any Uri mapped into
 the Fantom's namespace including the file system, "fan:" namespaces, or any
-of the protocols plugged into Fantom via 'UriScheme'.
+of the protocols plugged into Fantom via `UriScheme`.
 
 When a user navigates to a uri, the uri is resolved into a Fantom object
 via the standard naming subsystem.  We call the resolved
@@ -82,7 +82,7 @@ For example let's say we want to add support for "foolang".  First
 we edit "etc/syntax/ext.props" to map the file extension "foo" to
 the definition named "foolang":
 
-```
+```fantom
 foo=foolang
 ```
 
@@ -92,7 +92,7 @@ and syntax for comments and string literals.  It is easiest to start
 off with a definition for a language you are already familiar with.
 For example Java's syntax rules are:
 
-```
+```fantom
   // java syntax rules
   SyntaxRules
   {
@@ -130,7 +130,7 @@ menu items.  When the command is executed the script is compiled if out
 of date and the `FluxCommand.invoke` is invoked.  Here is an example
 tool script:
 
-```
+```fantom
   using fwt
   using flux
 
@@ -150,7 +150,7 @@ You can do this via the console sidebar.  For example assuming "fan" is
 your path, the following will run "fan -version" and show the output in
 the console:
 
-```
+```fantom
   override Void invoke(Event? event)
   {
     frame.console.show.exec(["fan", "-version"])
@@ -166,7 +166,7 @@ location.
 If you wish to have an accelerator to your tool, then add the command
 to your "etc/flux/keys.fog" file, where the key is "tools.{filename}":
 
-```
+```fantom
   bindings =
   [
     "tools.HelloWorld": "Ctrl+F9",
