@@ -1,0 +1,14 @@
+# ignore files
+
+Thumbs.db
+.DS_Store
+*.log
+fan.props
+
+# etc/
+etc/
+
+# lib/
+/lib/
+
+
