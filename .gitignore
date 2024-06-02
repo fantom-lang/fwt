@@ -6,9 +6,8 @@ Thumbs.db
 fan.props
 
 # etc/
-etc/
+/etc/flux/session/
 
 # lib/
 /lib/fan/
-
 
